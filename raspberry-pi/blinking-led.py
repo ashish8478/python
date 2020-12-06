@@ -4,6 +4,9 @@ import time
 ledpin = 17
 
 def setup():
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(ledpin, GPIO.OUT)
+
     while True:
         print("LED is ON now...")
         GPIO.output(ledpin, GPIO.LOW)

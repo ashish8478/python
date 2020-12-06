@@ -14,7 +14,8 @@ def playSirenOnThread():
     thread.start()
 
 def playSiren():
-    os.system('aplay /home/pi/rpi/siren.wav')
+    path = os.path.abspath(os.getcwd())
+    os.system('aplay {}/siren.wav'.format(path))
 
 def captureImageOnThread():
     thread = Thread(target=captureImage, args=[])
