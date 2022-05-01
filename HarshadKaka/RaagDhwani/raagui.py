@@ -3,8 +3,6 @@ import pygame_menu
 import csv
 from sound import play_notes
 from os import path
-# from hindustani_raga import play_notes
-# from backend import read_raag_data
 
 pygame.init()  # start listening to you drawing commands.
 COLORS = pygame.color.THECOLORS
